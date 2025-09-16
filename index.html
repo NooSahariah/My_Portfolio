@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="pt.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Dhritimaan Sahariah</div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#experience">Experience</a>
+    </nav>
+    <button id="theme-toggle">🌙</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Dhritimaan Sahariah</span></h1>
+      <p>Frontend Developer | Designer | Coder</p>
+      <a href="resume.pdf" class="btn">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m a developer who enjoys coding, exploring cloud technologies, and understanding how networks fit together. Alongside the technical side, I also have an eye for design—I like working on UI/UX to create experiences that feel simple and intuitive. For me, it’s about building things that don’t just work well, but also look and feel right to the people using them.</p>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Figma</span>
+      <span>python</span>
+      <span>Cloud Computing</span>
+      <span>Networking</span>
+      <span>Java</span>
+      <span>SQL</span>
+      <span>C</span>
+      <span>C++</span>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <div class="cert-list">
+      <div class="cert-item">
+        <h3>Digital Transformation with Cloud Computing</h3>
+        
+      </div>
+      <div class="cert-item">
+        <h3>C Programming Language</h3>
+      
+      </div>
+      <div class="cert-item">
+        <h3>Foundation of Cybersecurity</h3>
+        
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>UI/UX Designer - Innerly</h3>
+        <p>Worked in the design team to create user-friendly interfaces and improve user experience.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Web Developer Intern - InternPe</h3>
+        <p>Learnt a lot about web development and gained hands-on experience with various technologies.</p>
+     
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to top button -->
+  <button id="back-to-top">⬆</button>
+
+  <script src="pt.js"></script>
+</body>
+</html>
+<!-- Add Resume download option to the nav bar -->
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <div class="contact-details"></div>
+    <p><strong>Email:</strong> sahariahdhritimaan@gmail.com</p>
+    <p><strong>Phone:</strong> +91-9706401374</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dhritimaan-sahariah/" target="_blank">dhritimaan-sahariah</a></p>
+    <p><strong>Location:</strong> Assam, India</p>
+  </div>
+</section>
+
+<script>
+  // Add Resume link to the navigation bar
+  const nav = document.querySelector('.nav');
+  const resumeLink = document.createElement('a');
+  resumeLink.href = 'resume.pdf';
+  resumeLink.textContent = 'resume';
+  resumeLink.setAttribute('download', '');
+  nav.appendChild(resumeLink);
+
+  // Add Contact link to the navigation bar
+  const contactLink = document.createElement('a');
+  contactLink.href = '#contact';
+  contactLink.textContent = 'Contact';
+  nav.appendChild(contactLink);
+</script>
